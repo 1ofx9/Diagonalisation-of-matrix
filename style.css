@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 /* General */
+ /* to remove number spin button */
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
 
 * {
   margin: 0;
@@ -20,6 +24,8 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+
+
 
 /* Transition */
 
@@ -51,6 +57,8 @@ section {
     width: 8rem;
     border-radius: 2rem;
   }
+  
+  /* btn-color-1 is a placeholder */
   
   .btn-color-1,
   .btn-color-2 {
