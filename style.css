@@ -198,6 +198,76 @@ p {
   outline: none;
 }
 
+/* Matrix Selection */
+.matrix-selection {
+  width: 220px;
+  height: 45px;
+  position: relative;
+}
+
+#twoxtwo {
+  width: 90px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 500; 
+  word-wrap: break-word;
+  padding-top: 4px; 
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  left: 100px; 
+  top: 0; 
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.30); 
+  position: absolute; 
+  background: white; 
+  border-radius: 24px; 
+  overflow: hidden; 
+  border: 1px black solid; 
+  backdrop-filter: blur(20px); 
+  justify-content: center; 
+  align-items: center; 
+  display: inline-flex;
+}
+
+#twoxtwo:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+  border: 1px rgb(53, 53, 53);
+  transition: all 150ms ease-in;
+}
+
+#threexthree {
+  width: 90px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 500; 
+  word-wrap: break-word;
+  padding-top: 4px; 
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  left: 0; 
+  top: 0; 
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.30); 
+  position: absolute; 
+  background: white; 
+  border-radius: 24px; 
+  overflow: hidden; 
+  border: 1px black solid; 
+  backdrop-filter: blur(20px); 
+  justify-content: center; 
+  align-items: center; 
+  display: inline-flex;
+}
+
+#threexthree:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+  border: 1px rgb(53, 53, 53);
+  transition: all 150ms ease-in;
+}
+
+
 footer {
   height: 26vh;
   margin: 0 1rem;
