@@ -83,7 +83,7 @@ p {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: rgb(181, 181, 181);
-  transition: all 300ms ease-in;
+  transition: 300ms;
 }
 
 #gitlogo {
@@ -144,6 +144,58 @@ p {
   width: 277; 
   height: 205px; 
   position: relative;
+}
+
+/* Matrix cells */
+/* r1c1 */
+#r1c1 {
+  width: 80px; 
+  height: 50px; 
+  left: 50px; 
+  top: 100px; 
+  position: absolute; 
+  background: white; 
+  border-radius: 8px;
+  border: none;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+
+#r1c1:focus {
+  outline: none;
+}
+
+/* r1c2 */
+#r1c2 {
+  width: 80px; 
+  height: 50px; 
+  left: 150px; 
+  top: 100px; 
+  position: absolute; 
+  background: white; 
+  border-radius: 8px;
+  border: none;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+
+#r1c2:focus {
+  outline: none;
+}
+
+/* r1c3 */
+#r1c3 {
+  width: 80px; 
+  height: 50px; 
+  left: 250px; 
+  top: 100px; 
+  position: absolute; 
+  background: white; 
+  border-radius: 8px;
+  border: none;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+
+# :focus {
+  outline: none;
 }
 
 footer {
