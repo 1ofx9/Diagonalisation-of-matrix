@@ -7,24 +7,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 /* General */
- /* to remove number spin button */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/* to remove number spin button */
 input[type="number"]::-webkit-inner-spin-button {
     display: none;
 }
 
-/* Copyright */
-#copyright {
-  width: 610px;
-  height: 28px;
-  left: 398px;
-  top: 1115px;
-  position: absolute;
-  text-align: center;
-  color: #3f3f3f;
-  font-size: 20px;
+p {
+  color: rgb(85, 85, 85);
   font-family: Poppins;
   font-weight: 400;
   word-wrap: break-word;
+  text-align: center;
 }
 
 /* background */
@@ -33,22 +35,23 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 944px;
   left: 0px;
   top: 0px;
-  position: absolute;
+  position: relative;
   background: #fafafa;
 }
 
 .header {
-  width: 1284px;
+  width: 1280px;
   height: 81px;
   left: 62px;
   top: 70px;
   position: absolute;
+  background: #fafafa;
 }
 
 #topic {
   width: 755px;
   height: 68px;
-  left: -50px;
+  left: -25px;
   top: -40px;
   position: absolute;
   color: black;
@@ -56,4 +59,98 @@ input[type="number"]::-webkit-inner-spin-button {
   font-family: Poppins; 
   font-weight: 600; 
   word-wrap: break-word
+}
+
+#topic:hover {
+  cursor: default;
+}
+
+#logotext {
+  width: 132px;
+  height: 25px;
+  left: 1080px;
+  top: 30px; 
+  position: absolute;
+  color: black;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+#logotext:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(181, 181, 181);
+  transition: all 300ms ease-in;
+}
+
+#gitlogo {
+  width: 62px;
+  height: 52px;
+  left: 1105px; 
+  top: -25px; 
+  position: absolute;
+}
+
+#gitlogo:hover {
+  cursor: pointer;
+}
+
+.input-selection {
+  height: 478px; 
+  left: 180px; 
+  top: 196px; 
+  position: absolute; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 32px; 
+  display: inline-flex;
+}
+
+#input-matrix-text {
+  align-self: stretch; 
+  height: 37px; 
+  color: black; 
+  font-size: 26px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+}
+
+#input-matrix-text:hover {
+  cursor: default;
+}
+
+#input-box-bg {
+  width: 325px; 
+  height: 245px; 
+  padding-top: 21px; 
+  padding-bottom: 20px; 
+  padding-left: 24px; 
+  padding-right: 24px; 
+  background: #E0DCDC; 
+  box-shadow: 2.5px 6px 6px rgba(0, 0, 0, 0.30); 
+  border-radius: 18px; 
+  overflow: hidden; 
+  justify-content: center; 
+  align-items: center; 
+  display: inline-flex;
+}
+
+.matrix-inputs {
+  width: 277; 
+  height: 205px; 
+  position: relative;
+}
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
