@@ -1,18 +1,11 @@
 
 /* Author: @Subash Praveen Instagram: @sub._.praveen Github: @SUBASH2309 */
 
-
 /* Google Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 /* General */
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
 html{
   scroll-behavior: smooth;
 }
@@ -22,11 +15,20 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 p {
-  color: rgb(85, 85, 85);
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-  text-align: center;
+	visibility: hidden;
+	right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+	text-align: center;
+	position:fixed;
+}
+
+table,td,tr {
+	align-content: center;
+  margin-left:auto; 
+  margin-right:auto;
+	text-align:center;
 }
 
 /* background */
@@ -98,35 +100,45 @@ p {
   cursor: pointer;
 }
 
-.input-selection {
-  height: 478px; 
-  left: 180px; 
-  top: 196px; 
-  position: absolute; 
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: center; 
-  gap: 32px; 
-  display: inline-flex;
-}
-
-#input-matrix-text {
+/* Matrix inputs */
+#input-matrix-text-3x3 {
   align-self: stretch; 
+  top: 150px;
+  left: 100px;
   height: 37px; 
   color: black; 
   font-size: 26px; 
   font-family: Poppins; 
   font-weight: 500; 
   word-wrap: break-word;
+  position: absolute;
+}
+#input-matrix-text-2x2 {
+  align-self: stretch; 
+  top: 150px;
+  left: 100px;
+  height: 37px; 
+  color: rgb(255, 0, 0); 
+  font-size: 26px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+  position: absolute;
 }
 
-#input-matrix-text:hover {
+#input-matrix-text-3x3:hover {
+  cursor: default;
+}
+#input-matrix-text-2x2:hover {
   cursor: default;
 }
 
-#input-box-bg {
+#input-box-bg-3x3 {
   width: 325px; 
-  height: 245px; 
+  height: 255px;
+  top: 185px;
+  left: 100px;
+  position: absolute; 
   padding-top: 21px; 
   padding-bottom: 20px; 
   padding-left: 24px; 
@@ -139,20 +151,186 @@ p {
   align-items: center; 
   display: inline-flex;
 }
-
-.matrix-inputs {
-  width: 277; 
-  height: 205px; 
-  position: relative;
+#input-box-bg-2x2 {
+  width: 325px; 
+  height: 255px;
+  top: 185px;
+  left: 100px;
+  position: absolute; 
+  padding-top: 21px; 
+  padding-bottom: 20px; 
+  padding-left: 24px; 
+  padding-right: 24px; 
+  background: #ff0000; 
+  box-shadow: 2.5px 6px 6px rgba(0, 0, 0, 0.30); 
+  border-radius: 18px; 
+  overflow: hidden; 
+  justify-content: center; 
+  align-items: center; 
+  display: inline-flex;
 }
 
 /* Matrix cells */
+/* 3x3 */
 /* r1c1 */
-#r1c1 {
+#threer1c1 {
+	width: 80px; 
+  height: 50px; 
+  left: 120px; 
+	top: 210px;  
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+  position: absolute;
+}
+		
+#threer1c1:focus {
+  outline: none;
+}
+		
+/* r1c2 */
+#threer1c2 {
+  width: 80px; 
+	height: 50px; 
+  left: 240px; 
+  top: 210px;  
+  background: white; 
+	border-radius: 8px;
+  border: none;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+  position: absolute;
+}
+		
+#threer1c2:focus {
+	outline: none;
+}
+		
+/* r1c3 */
+#threer1c3 {
   width: 80px; 
   height: 50px; 
-  left: 50px; 
-  top: 100px; 
+  left: 360px; 
+  top: 210px;  
+  background: white; 
+  border-radius: 8px;
+  border: none;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+  position: absolute;
+}
+		
+#threer1c3:focus {
+  outline: none;
+}
+/* r2c1 */
+#threer2c1 {
+  width: 80px; 
+	height: 50px; 
+	left: 120px; 
+	top: 300px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+		
+#threer2c1:focus {
+	outline: none;
+}
+		
+/* r2c2 */
+#threer2c2 {
+	width: 80px; 
+	height: 50px; 
+	left: 240px; 
+	top: 300px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+		
+#threer2c2:focus {
+	outline: none;
+}
+
+/* r2c3 */
+#threer2c3 {
+	width: 80px; 
+	height: 50px; 
+	left: 360px; 
+	top: 300px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+		
+#threer2c3:focus {
+	outline: none;
+}
+
+/* r3c1 */
+#threer3c1 {
+	width: 80px; 
+	height: 50px; 
+	left: 120px; 
+	top: 400px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+		
+#threer3c1:focus {
+	outline: none;
+}
+		
+/* r3c2 */
+#threer3c2 {
+	width: 80px; 
+	height: 50px; 
+	left: 240px; 
+	top: 400px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+		
+#threer3c2:focus {
+	outline: none;
+}
+		
+/* r3c3 */
+#threer3c3 {
+	width: 80px; 
+	height: 50px; 
+	left: 360px; 
+	top: 400px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+		
+#threer3c3:focus {
+	outline: none;
+}
+
+/* 2x2 */
+/* r1c1 */
+#twor1c1 {
+  width: 80px; 
+  height: 50px; 
+  left: 120px; 
+  top: 210px; 
   position: absolute; 
   background: white; 
   border-radius: 8px;
@@ -160,49 +338,59 @@ p {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
 }
 
-#r1c1:focus {
+#twor1c1:focus {
   outline: none;
 }
 
 /* r1c2 */
-#r1c2 {
+#twor1c2 {
   width: 80px; 
   height: 50px; 
-  left: 150px; 
-  top: 100px; 
+  left: 240px; 
+  top: 210px; 
   position: absolute; 
   background: white; 
   border-radius: 8px;
   border: none;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
 }
-
-#r1c2:focus {
+		
+#twor1c2:focus {
   outline: none;
 }
-
-/* r1c3 */
-#r1c3 {
-  width: 80px; 
-  height: 50px; 
-  left: 250px; 
-  top: 100px; 
-  position: absolute; 
-  background: white; 
-  border-radius: 8px;
-  border: none;
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+		
+/* r2c1 */
+#twor2c1 {
+	width: 80px; 
+	height: 50px; 
+	left: 120px; 
+	top: 300px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
 }
-
-#r1c3:focus {
+		
+#twor2c1:focus {
+	outline: none;
+}
+		
+/* r2c2 */
+#twor2c2 {
+	width: 80px; 
+	height: 50px; 
+	left: 240px; 
+	top: 300px; 
+	position: absolute; 
+	background: white; 
+	border-radius: 8px;
+	border: none;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
+}
+		
+#twor2c2:focus {
   outline: none;
-}
-
-/* Matrix Selection */
-.matrix-selection {
-  width: 220px;
-  height: 45px;
-  position: relative;
 }
 
 #twoxtwo {
@@ -215,8 +403,8 @@ p {
   padding-bottom: 5px; 
   padding-left: 10px; 
   padding-right: 10px; 
-  left: 100px; 
-  top: 0; 
+  left: 175px; 
+  top: 500px; 
   box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.30); 
   position: absolute; 
   background: white; 
@@ -246,8 +434,8 @@ p {
   padding-bottom: 5px; 
   padding-left: 10px; 
   padding-right: 10px; 
-  left: 0; 
-  top: 0; 
+  left: 275px; 
+  top: 500px; 
   box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.30); 
   position: absolute; 
   background: white; 
@@ -265,14 +453,4 @@ p {
   color: white;
   border: 1px rgb(53, 53, 53);
   transition: all 150ms ease-in;
-}
-
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
 }

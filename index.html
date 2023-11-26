@@ -8,17 +8,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Diagonalization Of Matrix</title>
-		<link rel="stylesheet" href="./style.css" />
-		<script src="./script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
 	</head>
 
 	<body>
-		<!-- Main Background -->
+		<!-- Main Bg -->
 		<div style="width: auto; height: auto; position: relative; background: white">
-			<!-- Background (light gray) -->
+			<!-- Backdrop -->
 			<div id="bg-drop"></div>
-			<!-- Copyright text -->
-			<p>Copyright © 2023 Subash Praveen. All Rights Reserved.</p>
 			<!-- Header -->
 			<div class="header">
 				<!-- Topic of the project -->
@@ -28,27 +26,56 @@
 				<img id="gitlogo" src="./assets/github.svg" onclick="location.href='https://github.com/SUBASH2309/Diagonalization-of-matrix'" />	
 			</div>
 		</div>
+
 		<!-- Input box -->
-		<div class="input-selection">
-			<div id="input-matrix-text">Enter Matrix:</div>
-			<div id="input-box-bg"></div>
-				<!-- Matrix cells -->
-				<div class="matrx-inputs">
-					<input id="r1c1" type="number" pattern="+[0-9]" />
-					<input id="r1c2" type="number" pattern="+[0-9]" />
-					<input id="r1c3" type="number" pattern="+[0-9]" />
-					<!-- <input id="r2c1" type="number" pattern="+[0-9]" />
-					<input id="r2c2" type="number" pattern="+[0-9]" />
-					<input id="r2c3" type="number" pattern="+[0-9]" />
-					<input id="r3c1" type="number" pattern="+[0-9]" />
-					<input id="r3c2" type="number" pattern="+[0-9]" />
-					<input id="r3c3" type="number" pattern="+[0-9]" /> -->
-				</div>
-		</div>
+		<div id="input-box-bg-2x2"></div>
+		<div id="input-box-bg-3x3"></div>
+		<div id="input-matrix-text-2x2">Enter Matrix:</div>
+		<div id="input-matrix-text-3x3">Enter Matrix:</div>
+
 		<!-- Matrix Selection -->
-		<div class="matrix-selection">
-			<button type="button" id="twoxtwo" onclick="">2x2</button>
-			<button type="button" id="threexthree" onclick="">3x3</button>
+		<div>
+			<button type="button" id="twoxtwo" onclick="two()">2x2</button>
+			<button type="button" id="threexthree" onclick="three()">3x3</button>
 		</div>
+
+		<p id="two">
+			<table>
+				<tr>
+					<td><input id="twor1c1" type="number" pattern="+{0-9}"/></td>
+					<td><input id="twor1c2" type="number" pattern="+{0-9}"/></td>
+				</tr>
+				<tr>
+					<td><input id="twor2c1" type="number" pattern="+{0-9}"/></td>
+					<td><input id="twor2c2" type="number" pattern="+{0-9}"/></td>
+				</tr>
+			</table>
+			<button type="button" onclick="calculate2()">Calculate2</button>
+		</p>
+
+		<p id="three">
+			<table>
+				<tr>
+					<td><input id="threer1c1" type="number" pattern="+[0-9]" /></td>
+					<td><input id="threer1c2" type="number" pattern="+[0-9]" /></td>
+					<td><input id="threer1c3" type="number" pattern="+[0-9]" /></td>
+				</tr>
+				<tr>
+					<td><input id="threer2c1" type="number" pattern="+[0-9]" /></td>
+					<td><input id="threer2c2" type="number" pattern="+[0-9]" /></td>
+					<td><input id="threer2c3" type="number" pattern="+[0-9]" /></td>
+				</tr>
+				<tr>
+					<td><input id="threer3c1" type="number" pattern="+[0-9]" /></td>
+					<td><input id="threer3c2" type="number" pattern="+[0-9]" /></td>
+					<td><input id="threer3c3" type="number" pattern="+[0-9]" /></td>
+				</tr>
+			</table>
+			<button type="button" onclick="calculate3()">Calculate3</button>
+		</p>
+		<p id="end">
+			<br><br>
+			<span id="here"></span>
+		</p>
 	</body>
 </html>
