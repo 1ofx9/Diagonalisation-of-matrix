@@ -113,6 +113,7 @@ table,td,tr {
   word-wrap: break-word;
   position: absolute;
 }
+
 #input-matrix-text-2x2 {
   align-self: stretch; 
   top: 200px;
@@ -517,6 +518,33 @@ table,td,tr {
   transition: all 150ms ease-in;
 }
 
+#output-text {
+  align-self: stretch; 
+  top: 140px;
+  right: 500px;
+  height: 37px; 
+  color: black; 
+  font-size: 26px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+  position: absolute;
+}
+
+#output-text:hover {
+  cursor: default;
+}
+
 textarea {
   resize: none;
+  background: white;
+  width: 600px; 
+  height: 355px; 
+  top: -770px;
+  left: 680px;
+  position: relative; 
+  background: white; 
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30); 
+  border-radius: 18px;
+  border: 1px #E0DCDC solid;
 }
