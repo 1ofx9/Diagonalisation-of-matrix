@@ -47,9 +47,9 @@ function two() {
 }
 
 function calculate2() {
-
+    document.getElementById('textarea').value = "HELLO, WoRLD for cal2";
 }
 
 function calculate3() {
-
+    document.getElementById('textarea').value = "HELLO, WoRLD for cal3";
 }

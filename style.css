@@ -516,3 +516,7 @@ table,td,tr {
   border: 1px rgb(53, 53, 53);
   transition: all 150ms ease-in;
 }
+
+textarea {
+  resize: none;
+}
