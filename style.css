@@ -113,12 +113,13 @@ table,td,tr {
   word-wrap: break-word;
   position: absolute;
 }
+
 #input-matrix-text-2x2 {
   align-self: stretch; 
-  top: 150px;
-  left: 100px;
+  top: 200px;
+  left: 150px;
   height: 37px; 
-  color: rgb(255, 0, 0); 
+  color: black; 
   font-size: 26px; 
   font-family: Poppins; 
   font-weight: 500; 
@@ -135,7 +136,7 @@ table,td,tr {
 
 #input-box-bg-3x3 {
   width: 325px; 
-  height: 255px;
+  height: 250px;
   top: 185px;
   left: 100px;
   position: absolute; 
@@ -152,16 +153,16 @@ table,td,tr {
   display: inline-flex;
 }
 #input-box-bg-2x2 {
-  width: 325px; 
-  height: 255px;
-  top: 185px;
-  left: 100px;
+  width: 220px; 
+  height: 150px;
+  top: 235px;
+  left: 145px;
   position: absolute; 
   padding-top: 21px; 
   padding-bottom: 20px; 
   padding-left: 24px; 
   padding-right: 24px; 
-  background: #ff0000; 
+  background: #E0DCDC; 
   box-shadow: 2.5px 6px 6px rgba(0, 0, 0, 0.30); 
   border-radius: 18px; 
   overflow: hidden; 
@@ -278,7 +279,7 @@ table,td,tr {
 	width: 80px; 
 	height: 50px; 
 	left: 120px; 
-	top: 400px; 
+	top: 390px; 
 	position: absolute; 
 	background: white; 
 	border-radius: 8px;
@@ -295,7 +296,7 @@ table,td,tr {
 	width: 80px; 
 	height: 50px; 
 	left: 240px; 
-	top: 400px; 
+	top: 390px; 
 	position: absolute; 
 	background: white; 
 	border-radius: 8px;
@@ -312,7 +313,7 @@ table,td,tr {
 	width: 80px; 
 	height: 50px; 
 	left: 360px; 
-	top: 400px; 
+	top: 390px; 
 	position: absolute; 
 	background: white; 
 	border-radius: 8px;
@@ -329,8 +330,8 @@ table,td,tr {
 #twor1c1 {
   width: 80px; 
   height: 50px; 
-  left: 120px; 
-  top: 210px; 
+  left: 180px; 
+  top: 260px; 
   position: absolute; 
   background: white; 
   border-radius: 8px;
@@ -346,8 +347,8 @@ table,td,tr {
 #twor1c2 {
   width: 80px; 
   height: 50px; 
-  left: 240px; 
-  top: 210px; 
+  left: 300px; 
+  top: 260px; 
   position: absolute; 
   background: white; 
   border-radius: 8px;
@@ -363,8 +364,8 @@ table,td,tr {
 #twor2c1 {
 	width: 80px; 
 	height: 50px; 
-	left: 120px; 
-	top: 300px; 
+	left: 180px; 
+	top: 340px; 
 	position: absolute; 
 	background: white; 
 	border-radius: 8px;
@@ -380,15 +381,15 @@ table,td,tr {
 #twor2c2 {
 	width: 80px; 
 	height: 50px; 
-	left: 240px; 
-	top: 300px; 
+	left: 300px; 
+	top: 340px; 
 	position: absolute; 
 	background: white; 
 	border-radius: 8px;
 	border: none;
 	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30);
 }
-		
+
 #twor2c2:focus {
   outline: none;
 }
@@ -453,4 +454,97 @@ table,td,tr {
   color: white;
   border: 1px rgb(53, 53, 53);
   transition: all 150ms ease-in;
+}
+
+#cal2 {
+  width: 125px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 500; 
+  word-wrap: break-word;
+  padding-top: 4px; 
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  left: 210px; 
+  top: 575px; 
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.30); 
+  position: absolute; 
+  background: white; 
+  border-radius: 24px; 
+  overflow: hidden; 
+  border: 1px black solid; 
+  backdrop-filter: blur(20px); 
+  justify-content: center; 
+  align-items: center; 
+  display: inline-flex;
+}
+
+#cal2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+  border: 1px rgb(53, 53, 53);
+  transition: all 150ms ease-in;
+}
+
+#cal3 {
+  width: 125px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 500; 
+  word-wrap: break-word;
+  padding-top: 4px; 
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  left: 210px; 
+  top: 575px; 
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.30); 
+  position: absolute; 
+  background: white; 
+  border-radius: 24px; 
+  overflow: hidden; 
+  border: 1px black solid; 
+  backdrop-filter: blur(20px); 
+  justify-content: center; 
+  align-items: center; 
+  display: inline-flex;
+}
+
+#cal3:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+  border: 1px rgb(53, 53, 53);
+  transition: all 150ms ease-in;
+}
+
+#output-text {
+  align-self: stretch; 
+  top: 140px;
+  right: 500px;
+  height: 37px; 
+  color: black; 
+  font-size: 26px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+  position: absolute;
+}
+
+#output-text:hover {
+  cursor: default;
+}
+
+textarea {
+  resize: none;
+  background: white;
+  width: 600px; 
+  height: 355px; 
+  top: -770px;
+  left: 680px;
+  position: relative; 
+  background: white; 
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30); 
+  border-radius: 18px;
+  border: 1px #E0DCDC solid;
 }

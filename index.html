@@ -25,20 +25,22 @@
 				<div id="logotext" onclick="location.href='https://github.com/SUBASH2309/Diagonalization-of-matrix'">Source Code</div>
 				<img id="gitlogo" src="./assets/github.svg" onclick="location.href='https://github.com/SUBASH2309/Diagonalization-of-matrix'" />	
 			</div>
+			<!-- output text -->
+			<div id="output-text">Output:</div>
+			<!-- output boy text area -->
+			<div>
+				<textarea wrap="soft" name="Output" rows="10" cols="20" id="textarea" disabled></textarea>
+			</div>
 		</div>
-
-		<!-- Input box -->
-		<div id="input-box-bg-2x2"></div>
-		<div id="input-box-bg-3x3"></div>
-		<div id="input-matrix-text-2x2">Enter Matrix:</div>
-		<div id="input-matrix-text-3x3">Enter Matrix:</div>
-
 		<!-- Matrix Selection -->
 		<div>
 			<button type="button" id="twoxtwo" onclick="two()">2x2</button>
 			<button type="button" id="threexthree" onclick="three()">3x3</button>
 		</div>
 
+		<div id="input-box-bg-2x2"></div>
+		<div id="input-matrix-text-2x2">Enter Matrix:</div>
+		
 		<p id="two">
 			<table>
 				<tr>
@@ -50,8 +52,11 @@
 					<td><input id="twor2c2" type="number" pattern="+{0-9}"/></td>
 				</tr>
 			</table>
-			<button type="button" onclick="calculate2()">Calculate2</button>
+			<button id="cal2" type="button" onclick="calculate2()">Calculate</button>
 		</p>
+		
+		<div id="input-box-bg-3x3"></div>
+		<div id="input-matrix-text-3x3">Enter Matrix:</div>
 
 		<p id="three">
 			<table>
@@ -71,7 +76,7 @@
 					<td><input id="threer3c3" type="number" pattern="+[0-9]" /></td>
 				</tr>
 			</table>
-			<button type="button" onclick="calculate3()">Calculate3</button>
+			<button id="cal3" type="button" onclick="calculate3()">Calculate</button>
 		</p>
 		<p id="end">
 			<br><br>

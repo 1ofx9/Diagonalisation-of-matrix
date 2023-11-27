@@ -12,6 +12,8 @@ function three() {
     document.getElementById('threer3c3').style.visibility = "visible";        
     document.getElementById('input-box-bg-3x3').style.visibility = "visible";        
     document.getElementById('input-matrix-text-3x3').style.visibility = "visible";        
+    document.getElementById('cal3').style.visibility = "visible";        
+    document.getElementById('cal2').style.visibility = "hidden";        
     document.getElementById('input-matrix-text-2x2').style.visibility = "hidden";        
     document.getElementById('input-box-bg-2x2').style.visibility = "hidden";
     document.getElementById('twor1c1').style.visibility = "hidden";
@@ -28,7 +30,9 @@ function two() {
     document.getElementById('twor2c2').style.visibility = "visible";
     document.getElementById('input-box-bg-2x2').style.visibility = "visible";        
     document.getElementById('input-matrix-text-2x2').style.visibility = "visible";        
+    document.getElementById('cal2').style.visibility = "visible";        
     document.getElementById('input-matrix-text-3x3').style.visibility = "hidden";
+    document.getElementById('cal3').style.visibility = "hidden";
     document.getElementById('input-box-bg-3x3').style.visibility = "hidden";
     document.getElementById('threer1c1').style.visibility = "hidden";
     document.getElementById('threer1c2').style.visibility = "hidden";
@@ -43,9 +47,9 @@ function two() {
 }
 
 function calculate2() {
-
+    document.getElementById('textarea').value = "HELLO, WoRLD for cal2";
 }
 
 function calculate3() {
-
+    document.getElementById('textarea').value = "HELLO, WoRLD for cal3";
 }
