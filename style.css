@@ -103,7 +103,7 @@ table,td,tr {
 /* Matrix inputs */
 #input-matrix-text-3x3 {
   align-self: stretch; 
-  top: 150px;
+  top: 140px;
   left: 100px;
   height: 37px; 
   color: black; 
@@ -116,7 +116,7 @@ table,td,tr {
 
 #input-matrix-text-2x2 {
   align-self: stretch; 
-  top: 200px;
+  top: 190px;
   left: 150px;
   height: 37px; 
   color: black; 
@@ -519,9 +519,8 @@ table,td,tr {
 }
 
 #output-text {
-  align-self: stretch; 
-  top: 140px;
-  right: 500px;
+  top: 130px;
+  left: 690px;
   height: 37px; 
   color: black; 
   font-size: 26px; 
@@ -547,4 +546,7 @@ textarea {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30); 
   border-radius: 18px;
   border: 1px #E0DCDC solid;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 12px;
 }
