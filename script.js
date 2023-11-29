@@ -1,5 +1,7 @@
 // Author: @Subash Praveen Instagram: @sub._.praveen Github: @SUBASH2309
 
+const { math } = require("./math");
+
 // visibility of cells 3x3
 function three() {
     document.getElementById('threer1c1').style.visibility = "visible";    
@@ -59,21 +61,21 @@ function calculate2() {
     var twr2c2 = document.getElementById("twor2c2").value;
 
     // to find Determinant of the matrix
-    var det;
-    det = (twr1c1*twr2c2)-(twr1c2*twr2c1)
-
+    var twdet;
+    twdet = (twr1c1 * twr2c2)-(twr1c2 * twr2c1)
+    
     // to get eigen values
     var twev;
     twev = math.eigs([[twr1c1, twr1c2], [twr2c1, twr2c2]], {eigenvectors: false}); //outputs dict containing only eigenvalues as 'values'
 
     // to display output
-    twoutput = "Eigen values ('λ') = "+math.round(Object.values(twev))+"\nEigen Vectors = "; //this only displays eigen values
+    twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\tEigen values ('λ') = "+math.round(Object.values(twev))+"\n\tEigen Vectors = "; //this only displays eigen values
     twoutbox.innerHTML = twoutput;
 }
 
 function calculate3() {
     // output box
-    const outbox = document.getElementById('textarea');
+    const thoutbox = document.getElementById('textarea');
     // row1
     var thr1c1 = document.getElementById("threer1c1").value;
     var thr1c2 = document.getElementById("threer1c2").value;
@@ -87,6 +89,17 @@ function calculate3() {
     var thr3c2 = document.getElementById("threer3c2").value;
     var thr3c3 = document.getElementById("threer3c3").value;
 
+    // to find Determinant of the matrix
+    var thdet;
+    thdet = (thr1c1 * thr1c2 * thr1c3) + (thr2c1 * thr3c2 * thr1c3) + (thr3c1 * thr1c2 * thr2c3) - (thr1c3 * thr2c2 * thr3c1) - (thr2c3 * thr3c2 * thr1c1) - (thr3c3 * thr1c2 * thr2c1);
 
+    // to find Eigen values
+    var thev;
+    thev = math.eigs([[thr1c1, thr1c2, thr1c3], [thr2c1, thr2c2, thr2c3], [thr3c1, thr3c2, thr3c3]], {eigenvectors : false});
+
+
+    // to display output
+    thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\tEigen values ('λ') = "+math.round(Object.values(thev))+"\n\tEigen Vectors = "; //this only displays eigen values for now....
+    thoutbox.innerHTML = thoutput;
 
 }
