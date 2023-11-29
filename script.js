@@ -1,6 +1,6 @@
 // Author: @Subash Praveen Instagram: @sub._.praveen Github: @SUBASH2309
 
-const { math } = require("./math");
+var math = require('./math');
 
 // visibility of cells 3x3
 function three() {
@@ -62,7 +62,7 @@ function calculate2() {
 
     // to find Determinant of the matrix
     var twdet;
-    twdet = (twr1c1 * twr2c2)-(twr1c2 * twr2c1)
+    twdet = math.det([[twr1c1, twr1c2], [twr2c1, twr2c2]])
     
     // to get eigen values
     var twev;
@@ -91,15 +91,15 @@ function calculate3() {
 
     // to find Determinant of the matrix
     var thdet;
-    thdet = (thr1c1 * thr1c2 * thr1c3) + (thr2c1 * thr3c2 * thr1c3) + (thr3c1 * thr1c2 * thr2c3) - (thr1c3 * thr2c2 * thr3c1) - (thr2c3 * thr3c2 * thr1c1) - (thr3c3 * thr1c2 * thr2c1);
+    thdet = math.det([[thr1c1, thr1c2, thr1c3], [thr2c1, thr2c2, thr2c3], [thr3c1, thr3c2, thr3c3]])
 
     // to find Eigen values
     var thev;
-    thev = math.eigs([[thr1c1, thr1c2, thr1c3], [thr2c1, thr2c2, thr2c3], [thr3c1, thr3c2, thr3c3]], {eigenvectors : false});
+    thev = math.eigs([[thr1c1, thr1c2, thr1c3], [thr2c1, thr2c2, thr2c3], [thr3c1, thr3c2, thr3c3]], {eigenvectors: false});
 
+    // to find Eigen Vectors
 
     // to display output
     thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\tEigen values ('λ') = "+math.round(Object.values(thev))+"\n\tEigen Vectors = "; //this only displays eigen values for now....
     thoutbox.innerHTML = thoutput;
-
 }
