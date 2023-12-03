@@ -79,8 +79,8 @@ function calculate2() {
 
     // to seprate Eigen Vectors into X1, X2, X3
 
-    // to be honest i don't even know what i did here :3, good luck figuring out :D
-    
+    // to be honest i don't even know what i did here :3, good luck figuring it out :D
+
     var twv1 = Object.values(twevectors[0]);
     var twv2 = Object.values(twevectors[1]);
 
@@ -133,7 +133,7 @@ function calculate3() {
 
     // to seprate Eigen Vectors into X1, X2, X3
 
-    // to be honest i don't even know what i did here :3, good luck figuring out :D
+    // to be honest i don't even know what i did here :3, good luck figuring it out :D
 
     var thv1 = Object.values(thevectors[0]);
     var thv2 = Object.values(thevectors[1]);
