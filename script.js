@@ -71,13 +71,29 @@ function calculate2() {
     
     // to get eigen values and Eigen vectors
     var twev;
-    twev = math.eigs(tw_matrix); //outputs dict containing only eigenvalues as 'values'
+    twev = math.eigs(tw_matrix);
 
+    // to find eigen values and eigen vectors
     var twevalues = twev.values; //Eigen values of 2x2
-    var twvectors = twev.eigenvectors; //Eigen vectors of 2x2
+    var twevectors = twev.eigenvectors; //Eigen vectors of 2x2
 
-    // to display output
-    twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\tEigen Vectors = "+twvectors; //this only displays eigen values
+    // to seprate Eigen Vectors into X1, X2, X3
+
+    // to be honest i don't even know what i did here :3, good luck figuring out :D
+    
+    var twv1 = Object.values(twevectors[0]);
+    var twv2 = Object.values(twevectors[1]);
+
+    var twvx1ur = twv1[1];
+    let twvx1 = math.round(twvx1ur);
+    console.log(twv1)
+
+    var twvx2ur = twv2[1];
+    let twvx2 = math.round(twvx2ur);
+    console.log(twv2)
+
+    // to display output of 2x2
+    twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+twvx1+"}"+"\n\t\tX2 = {"+twvx2+"}";
     twoutbox.innerHTML = twoutput;
 }
 
@@ -107,11 +123,11 @@ function calculate3() {
     var thdet;
     thdet = math.det(th_matrix);
     
-    // to find Eigen values
+    // to find Eigen values and Eigen vectors
     var thev;
     thev = math.eigs(th_matrix);
 
-    // to get eigen values and eigen vectors
+    // to separate eigen values and eigen vectors
     var thevalues = thev.values; //Eigen values of 3x3
     var thevectors = thev.eigenvectors; //Eigen vectors of 3x3
 
@@ -135,7 +151,7 @@ function calculate3() {
     let thvx3 = math.round(thvx3ur);
     console.log(thv3)
 
-    // to display output
+    // to display output of 3x3
     thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+thvx1+"}"+"\n\t\tX2 = {"+thvx2+"}"+"\n\t\tX3 = {"+thvx3+"}";
     thoutbox.innerHTML = thoutput;
 }
