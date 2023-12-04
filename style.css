@@ -563,7 +563,7 @@ table,td,tr {
   height: 100px;
   top: 16vh;
   left: -50vh;
-  position: relative;
+  position: absolute;
 }
 
 #tm-title-underline {
