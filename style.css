@@ -562,7 +562,7 @@ table,td,tr {
   width: 1020px;
   height: 100px;
   top: 16vh;
-  left: -50vh;
+  left: 18vh;
   position: absolute;
 }
 
@@ -580,7 +580,7 @@ table,td,tr {
   width: 1098px;
   height: 27px;
   top: 15rem;
-  left: -47rem;
+  left: -35rem;
   position: relative;
   display: flex;
   justify-content: center;
