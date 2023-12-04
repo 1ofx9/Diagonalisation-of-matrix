@@ -74,8 +74,6 @@ function calculate2() {
     twev = math.eigs(tw_matrix);
 
     // to find eigen values and eigen vectors
-    var twevalues = twev.values; //Eigen values of 2x2
-    var twevectors = twev.eigenvectors; //Eigen vectors of 2x2
 
     // to seprate Eigen Vectors into X1, X2, X3
 
@@ -84,16 +82,26 @@ function calculate2() {
     var twv1 = Object.values(twevectors[0]);
     var twv2 = Object.values(twevectors[1]);
 
-    var twvx1ur = twv1[1];
-    let twvx1 = math.round(twvx1ur);
-    console.log(twv1)
+    var twvx1ur = Object.values(twv1[1]);
+    var twvx1a = math.round(twvx1ur[0], 2);
+    var twvx1b = math.round(twvx1ur[1], 2);
 
-    var twvx2ur = twv2[1];
-    let twvx2 = math.round(twvx2ur);
-    console.log(twv2)
+    // For full values of X1
+    console.log("X1\n");
+    console.log(twvx1ur[0]);    
+    console.log(twvx1ur[1]);   
+    
+    var twvx2ur = Object.values(twv2[1]);
+    var twvx2a = math.round(twvx2ur[0], 2); 
+    var twvx2b = math.round(twvx2ur[1], 2);
+    
+    // For full values of X2
+    console.log("X2\n");
+    console.log(twvx2ur[0]);    
+    console.log(twvx2ur[1]);
 
     // to display output of 2x2
-    twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+twvx1+"}"+"\n\t\tX2 = {"+twvx2+"}";
+    twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+twvx1a+", "+twvx1b+"}"+"\n\t\tX2 = {"+twvx2a+", "+twvx2b+"}\n";
     twoutbox.innerHTML = twoutput;
 }
 
@@ -139,19 +147,40 @@ function calculate3() {
     var thv2 = Object.values(thevectors[1]);
     var thv3 = Object.values(thevectors[2]);
 
-    var thvx1ur = thv1[1];
-    let thvx1 = math.round(thvx1ur);
-    console.log(thv1)
+    var thvx1ur = Object.values(thv1[1]);
+    var thvx1a = math.round(thvx1ur[0], 2);
+    var thvx1b = math.round(thvx1ur[1], 2);
+    var thvx1c = math.round(thvx1ur[2], 2);
 
-    var thvx2ur = thv2[1];
-    let thvx2 = math.round(thvx2ur);
-    console.log(thv2)
+    // For full values of x1
+    console.log("X1\n");
+    console.log(thvx1ur[0]);
+    console.log(thvx1ur[1]);
+    console.log(thvx1ur[2]);
+    
+    var thvx2ur = Object.values(thv2[1]);
+    var thvx2a = math.round(thvx2ur[0], 2);    
+    var thvx2b = math.round(thvx2ur[1], 2);    
+    var thvx2c = math.round(thvx2ur[2], 2);   
+    
+    // For full values of X2 
+    console.log("X2\n");
+    console.log(thvx2ur[0]);
+    console.log(thvx2ur[1]);
+    console.log(thvx2ur[2]);
+    
+    var thvx3ur = Object.values(thv3[1]);
+    var thvx3a = math.round(thvx3ur[0], 2);
+    var thvx3b = math.round(thvx3ur[1], 2);
+    var thvx3c = math.round(thvx3ur[2], 2);
 
-    var thvx3ur = thv3[1];
-    let thvx3 = math.round(thvx3ur);
-    console.log(thv3)
-
+    // For full values of X3
+    console.log("X3\n");
+    console.log(thvx3ur[0]);
+    console.log(thvx3ur[1]);
+    console.log(thvx3ur[2]);
+    
     // to display output of 3x3
-    thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+thvx1+"}"+"\n\t\tX2 = {"+thvx2+"}"+"\n\t\tX3 = {"+thvx3+"}";
+    thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+thvx1a+", "+thvx1b+", "+thvx1c+"}"+"\n\t\tX2 = {"+thvx2a+", "+thvx2b+", "+thvx2c+"}"+"\n\t\tX3 = {"+thvx3a+", "+thvx3b+", "+thvx3c+"}\n";
     thoutbox.innerHTML = thoutput;
 }
