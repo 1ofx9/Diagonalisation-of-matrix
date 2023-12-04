@@ -8,7 +8,10 @@
 /* General */
 html{
   scroll-behavior: smooth;
+  max-height: max-content;
+  max-width: max-content;
 }
+
 /* to remove number spin button */
 input[type="number"]::-webkit-inner-spin-button {
     display: none;
@@ -35,19 +38,15 @@ table,td,tr {
 #bg-drop {
   width: 1440px;
   height: 944px;
-  left: 0px;
-  top: 0px;
-  position: relative;
-  background: #fafafa;
+  background: #ffffff00;
 }
 
 .header {
-  width: 1280px;
+  width: 100%; /*1280px*/
   height: 81px;
   left: 62px;
   top: 70px;
   position: absolute;
-  background: #fafafa;
 }
 
 #topic {
@@ -535,17 +534,112 @@ table,td,tr {
 }
 
 #tm-border {
-  width: 100%;
-  height: 100%; 
-  position: relative; 
-  background: white; 
-  border-radius: 24px; 
+  width: 185vh;
+  height: 50vh; 
+  position: absolute; 
+  top: 95vh;
+  background: rgba(255, 255, 255, 0); 
+  border-radius: 20px; 
   overflow: hidden; 
   border: 1px #3F3F3F solid; 
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  display: inline-flex
+  display: flex;
+}
+
+#tm-title {
+  width: 100%;
+  height: 45px; 
+  color: black; 
+  font-size: 26px; 
+  font-family: Poppins; 
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  word-break: keep-all;
+}
+
+#tm-title-underline {
+  width: 208px; 
+  height: 4px; 
+  position: absolute; 
+  margin-top: 3rem;
+  margin-left: 1rem;
+  background: #E0DCDC; 
+  border-radius: 20px;
+}
+
+#tm-names {
+  width: 1098px;
+  height: 27px;
+  top: 16rem;
+  left: -48rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#tm-profiles {
+  width: 1020px;
+  height: 100px;
+}
+
+#sub {
+  width: 168.44px; 
+  left: 0px; 
+  top: 0px; 
+  position: absolute; 
+  color: black; 
+  font-size: 18px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+}
+
+#sar {
+  width: 156px; 
+  left: 238px; 
+  top: 0px; 
+  position: absolute; 
+  color: black; 
+  font-size: 18px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+}
+
+#hem {
+  width: 168.44px; 
+  left: 463px; 
+  top: 0px; 
+  position: absolute; 
+  color: black; 
+  font-size: 18px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+}
+
+#bha {
+  width: 106px; 
+  left: 724px; 
+  top: 0px; 
+  position: absolute; 
+  color: black; 
+  font-size: 18px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
+}
+
+#aru {
+  width: 182px; 
+  left: 916px; 
+  top: 0px; 
+  position: absolute; 
+  color: black; 
+  font-size: 18px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  word-wrap: break-word;
 }
 
 textarea {
@@ -553,8 +647,8 @@ textarea {
   background: white;
   width: 600px; 
   height: 355px; 
-  top: -770px;
-  left: 680px;
+  margin-top: 10rem;
+  margin-left: 42rem;
   position: relative; 
   background: white; 
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.30); 
