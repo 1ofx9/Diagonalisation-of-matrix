@@ -537,7 +537,7 @@ table,td,tr {
   width: 180vh;
   height: 50vh; 
   position: absolute; 
-  top: 120vh;
+  top: 110vh;
   left: 12vh;
   background: rgba(255, 255, 255, 0); 
   border-radius: 20px; 
@@ -562,7 +562,7 @@ table,td,tr {
   width: 1020px;
   height: 100px;
   top: 16vh;
-  left: -82vh;
+  left: -50vh;
   position: relative;
 }
 
@@ -580,7 +580,7 @@ table,td,tr {
   width: 1098px;
   height: 27px;
   top: 15rem;
-  left: -37rem;
+  left: -47rem;
   position: relative;
   display: flex;
   justify-content: center;
