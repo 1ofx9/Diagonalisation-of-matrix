@@ -537,7 +537,7 @@ table,td,tr {
   width: 180vh;
   height: 50vh; 
   position: absolute; 
-  top: 100vh;
+  top: 120vh;
   left: 12vh;
   background: rgba(255, 255, 255, 0); 
   border-radius: 20px; 
@@ -563,6 +563,7 @@ table,td,tr {
   height: 100px;
   top: 16vh;
   left: -82vh;
+  position: relative;
 }
 
 #tm-title-underline {
