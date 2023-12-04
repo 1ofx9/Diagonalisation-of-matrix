@@ -534,10 +534,11 @@ table,td,tr {
 }
 
 #tm-border {
-  width: 185vh;
+  width: 180vh;
   height: 50vh; 
   position: absolute; 
-  top: 95vh;
+  top: 100vh;
+  left: 12vh;
   background: rgba(255, 255, 255, 0); 
   border-radius: 20px; 
   overflow: hidden; 
@@ -557,6 +558,14 @@ table,td,tr {
   word-break: keep-all;
 }
 
+#tm-profiles {
+  width: auto;
+  height: 100px;
+  top: 16vh;
+  left: -82vh;
+  position: relative;
+}
+
 #tm-title-underline {
   width: 208px; 
   height: 4px; 
@@ -570,17 +579,14 @@ table,td,tr {
 #tm-names {
   width: 1098px;
   height: 27px;
-  top: 16rem;
-  left: -48rem;
+  top: 15rem;
+  left: -37rem;
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-#tm-profiles {
-  width: 1020px;
-  height: 100px;
-}
+
 
 #sub {
   width: 168.44px; 
