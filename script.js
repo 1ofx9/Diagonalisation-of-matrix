@@ -100,6 +100,9 @@ function calculate2() {
     console.log(twvx2ur[0]);    
     console.log(twvx2ur[1]);
 
+    // to find the Transpose of 2x2 matrix
+    var tw_trans_matrix
+
     // to display output of 2x2
     twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+twvx1a+", "+twvx1b+"}"+"\n\t\tX2 = {"+twvx2a+", "+twvx2b+"}\n";
     twoutbox.innerHTML = twoutput;
@@ -179,6 +182,9 @@ function calculate3() {
     console.log(thvx3ur[0]);
     console.log(thvx3ur[1]);
     console.log(thvx3ur[2]);
+
+    // to find the transpose of 3x3 matrix
+    var th_trans_matrix;
     
     // to display output of 3x3
     thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+thvx1a+", "+thvx1b+", "+thvx1c+"}"+"\n\t\tX2 = {"+thvx2a+", "+thvx2b+", "+thvx2c+"}"+"\n\t\tX3 = {"+thvx3a+", "+thvx3b+", "+thvx3c+"}\n";
