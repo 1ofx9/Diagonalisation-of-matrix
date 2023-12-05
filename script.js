@@ -90,6 +90,7 @@ function calculate2() {
     console.log("X1\n");
     console.log(twvx1ur[0]);    
     console.log(twvx1ur[1]);   
+    console.log("-----")
     
     var twvx2ur = Object.values(twv2[1]);
     var twvx2a = math.round(twvx2ur[0], 2); 
@@ -99,9 +100,10 @@ function calculate2() {
     console.log("X2\n");
     console.log(twvx2ur[0]);    
     console.log(twvx2ur[1]);
+    console.log("-----")
 
-    // to find the Transpose of 2x2 matrix
-    var tw_trans_matrix
+    // to find the transpose of 2x2 matrix
+    var tw_transpose_matrix
 
     // to display output of 2x2
     twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+twvx1a+", "+twvx1b+"}"+"\n\t\tX2 = {"+twvx2a+", "+twvx2b+"}\n";
@@ -160,6 +162,7 @@ function calculate3() {
     console.log(thvx1ur[0]);
     console.log(thvx1ur[1]);
     console.log(thvx1ur[2]);
+    console.log("-----")
     
     var thvx2ur = Object.values(thv2[1]);
     var thvx2a = math.round(thvx2ur[0], 2);    
@@ -171,6 +174,7 @@ function calculate3() {
     console.log(thvx2ur[0]);
     console.log(thvx2ur[1]);
     console.log(thvx2ur[2]);
+    console.log("-----")
     
     var thvx3ur = Object.values(thv3[1]);
     var thvx3a = math.round(thvx3ur[0], 2);
@@ -182,11 +186,35 @@ function calculate3() {
     console.log(thvx3ur[0]);
     console.log(thvx3ur[1]);
     console.log(thvx3ur[2]);
+    console.log("-----")
 
     // to find the transpose of 3x3 matrix
-    var th_trans_matrix;
-    
+    var th_transpose_matrix = Object.values(math.transpose(th_matrix));
+    var th_transpose_r1 = th_transpose_matrix[0];    
+    var th_transpose_r2 = th_transpose_matrix[1];
+    var th_transpose_r3 = th_transpose_matrix[2];
+
+    console.log("Transpose Of Matrix")
+    console.log(th_transpose_r1)
+    console.log(th_transpose_r2)    
+    console.log(th_transpose_r3)
+    console.log("-----")
+
+    // to find whether the matrix is symmetric or skew-symmetric
+    var th_matrix_type;
+    var th_matrix_chk = JSON.stringify(th_matrix);
+    var th_transpose_matrix_chk = JSON.stringify(th_transpose_matrix);
+
+    if (th_matrix_chk == th_transpose_matrix_chk) {
+        th_matrix_type = "The Matrix is Symmetric i.e (A is equal to A*)";
+    } else {
+        th_matrix_type = "The Matrix is Skew-Symmetric i.e (A is not equal to A*)";
+    }
+
+    console.log(th_matrix_type)
+    console.log("-----")
+
     // to display output of 3x3
-    thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\tEigen Vectors:\n\t\tX1 = {"+thvx1a+", "+thvx1b+", "+thvx1c+"}"+"\n\t\tX2 = {"+thvx2a+", "+thvx2b+", "+thvx2c+"}"+"\n\t\tX3 = {"+thvx3a+", "+thvx3b+", "+thvx3c+"}\n";
+    thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\n\t"+th_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = {"+thvx1a+", "+thvx1b+", "+thvx1c+"}"+"\n\t\tX2 = {"+thvx2a+", "+thvx2b+", "+thvx2c+"}"+"\n\t\tX3 = {"+thvx3a+", "+thvx3b+", "+thvx3c+"}\n";
     thoutbox.innerHTML = thoutput;
 }
