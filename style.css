@@ -42,7 +42,7 @@ table,td,tr {
 }
 
 .header {
-  width: 100%; /*1280px*/
+  width: 100%;
   height: 81px;
   left: 62px;
   top: 70px;
@@ -586,8 +586,6 @@ table,td,tr {
   justify-content: center;
 }
 
-
-
 #sub {
   width: 168.44px; 
   left: 0px; 
@@ -598,6 +596,19 @@ table,td,tr {
   font-family: Poppins; 
   font-weight: 500; 
   word-wrap: break-word;
+  cursor: default;
+}
+
+#sub:hover {
+  cursor: pointer;
+}
+
+#sub-pic {
+  cursor: default;
+}
+
+#sub-pic:hover {
+  cursor: pointer;
 }
 
 #sar {
@@ -610,6 +621,7 @@ table,td,tr {
   font-family: Poppins; 
   font-weight: 500; 
   word-wrap: break-word;
+  cursor: default;
 }
 
 #hem {
@@ -622,6 +634,7 @@ table,td,tr {
   font-family: Poppins; 
   font-weight: 500; 
   word-wrap: break-word;
+  cursor: default;
 }
 
 #bha {
@@ -634,6 +647,7 @@ table,td,tr {
   font-family: Poppins; 
   font-weight: 500; 
   word-wrap: break-word;
+  cursor: default;
 }
 
 #aru {
@@ -646,13 +660,14 @@ table,td,tr {
   font-family: Poppins; 
   font-weight: 500; 
   word-wrap: break-word;
+  cursor: default;
 }
 
 textarea {
   resize: none;
   background: white;
   width: 600px; 
-  height: 355px; 
+  height: 390px; 
   margin-top: 10rem;
   margin-left: 42rem;
   position: relative; 
@@ -662,5 +677,5 @@ textarea {
   border: 1px #E0DCDC solid;
   font-family: Poppins;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
 }
