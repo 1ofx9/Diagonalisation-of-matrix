@@ -259,13 +259,12 @@ function calculate3() {
     // this below line of code does exactly what is given above :)
     var mat_b =[[th_ev_x1[0], th_ev_x2[0], th_ev_x3[0]], [th_ev_x1[1], th_ev_x2[1], th_ev_x3[1]], [th_ev_x1[2], th_ev_x2[2], th_ev_x3[2]]] 
     var inv_mat_b = math.inv(mat_b);
+    var diagonalised_mat = math.multiply(inv_mat_b, th_matrix, mat_b);
     
     
     if (dia_ns == 0) { //symmetric
         console.log("Normalised Matrix and Diagonalised Matrix")
 
-        var diagonalised_mat = math.multiply(inv_mat_b, th_matrix, mat_b);
-        
         // to round and display Diagonalised Matrix
         var diagonalised_mat_r1 = Object.values(diagonalised_mat[0]);
         var diagonalised_mat_r2 = Object.values(diagonalised_mat[1]);
@@ -290,14 +289,12 @@ function calculate3() {
         // Normalized Matrix
 
         
-        thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\n\t"+th_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = ["+thvx1a+", "+thvx1b+", "+thvx1c+"]"+"\n\t\tX2 = ["+thvx2a+", "+thvx2b+", "+thvx2c+"]"+"\n\t\tX3 = ["+thvx3a+", "+thvx3b+", "+thvx3c+"]"+"\n\n\tNormalised Matrix (N):"+"\n\n\tDiagonalized Matrix (D):"+"\n\t\t|"+dia_matr1_a1+"|"+"\n\t\t|"+dia_matr1_a2+"|"+"\n\t\t|"+dia_matr1_a3+"|";
+        thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\n\t"+th_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = ["+thvx1a+", "+thvx1b+", "+thvx1c+"]"+"\n\t\tX2 = ["+thvx2a+", "+thvx2b+", "+thvx2c+"]"+"\n\t\tX3 = ["+thvx3a+", "+thvx3b+", "+thvx3c+"]"+"\n\n\tNormalised Matrix (N):"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"+"\n\n\tDiagonalized Matrix (D):"+"\n\t\t|"+dia_matr1_a1+"|"+"\n\t\t|"+dia_matr1_a2+"|"+"\n\t\t|"+dia_matr1_a3+"|";
         thoutbox.innerHTML = thoutput;
 
     } else if (dia_ns == 1){ //skew-symmetric
         console.log("Inverse Of Matrix and Diagonalised Matrix")
 
-        var diagonalised_mat = math.multiply(inv_mat_b, th_matrix, mat_b);
-        
         // to round and display Diagonalised Matrix
         var diagonalised_mat_r1 = Object.values(diagonalised_mat[0]);
         var diagonalised_mat_r2 = Object.values(diagonalised_mat[1]);
@@ -322,7 +319,5 @@ function calculate3() {
         thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\n\t"+th_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = ["+thvx1a+", "+thvx1b+", "+thvx1c+"]"+"\n\t\tX2 = ["+thvx2a+", "+thvx2b+", "+thvx2c+"]"+"\n\t\tX3 = ["+thvx3a+", "+thvx3b+", "+thvx3c+"]"+"\n\n\tDiagonalized Matrix (D):"+"\n\t\t|"+dia_matr1_a1+"|"+"\n\t\t|"+dia_matr1_a2+"|"+"\n\t\t|"+dia_matr1_a3+"|";
         thoutbox.innerHTML = thoutput;
         
-    } else {
-        console.log("idk man :|")
     }
 }
