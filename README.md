@@ -9,8 +9,9 @@ Live on Github Pages **https://subash2309.github.io/Diagonalization-of-matrix/**
 Or download Source code directly form [here](https://github.com/SUBASH2309/Diagonalization-of-matrix/archive/refs/heads/master.zip).
 
 ### License
-[![License: MIT](https://img.shields.io/badge/License-MIT-gr.svg)](https://opensource.org/licenses/MIT)
-<br>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 This project is licensed under The MIT License.
 
 ### Work flow:
