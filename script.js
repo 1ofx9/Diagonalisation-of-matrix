@@ -4,6 +4,8 @@ var math = require('./math')
 
 // visibility of cells 3x3
 function three() {
+
+    // visibility for each element of the 3x3 matrix
     document.getElementById('threer1c1').style.visibility = "visible";    
     document.getElementById('threer1c2').style.visibility = "visible";    
     document.getElementById('threer1c3').style.visibility = "visible";    
@@ -15,7 +17,9 @@ function three() {
     document.getElementById('threer3c3').style.visibility = "visible";        
     document.getElementById('input-box-bg-3x3').style.visibility = "visible";        
     document.getElementById('input-matrix-text-3x3').style.visibility = "visible";        
-    document.getElementById('cal3').style.visibility = "visible";        
+    document.getElementById('cal3').style.visibility = "visible"; 
+    
+    // Hide elements related to the 2x2 matrix
     document.getElementById('cal2').style.visibility = "hidden";        
     document.getElementById('input-matrix-text-2x2').style.visibility = "hidden";        
     document.getElementById('input-box-bg-2x2').style.visibility = "hidden";
@@ -28,13 +32,18 @@ function three() {
 
 // visibility of cells 2x2
 function two() {
+
+    // visibility for each element of the 2x2 matrix
     document.getElementById('twor1c1').style.visibility = "visible";
     document.getElementById('twor1c2').style.visibility = "visible";
     document.getElementById('twor2c1').style.visibility = "visible";
     document.getElementById('twor2c2').style.visibility = "visible";
     document.getElementById('input-box-bg-2x2').style.visibility = "visible";        
     document.getElementById('input-matrix-text-2x2').style.visibility = "visible";        
-    document.getElementById('cal2').style.visibility = "visible";        
+    document.getElementById('cal2').style.visibility = "visible";
+    
+    
+    // Hide elements related to the 3x3 matrix
     document.getElementById('input-matrix-text-3x3').style.visibility = "hidden";
     document.getElementById('cal3').style.visibility = "hidden";
     document.getElementById('input-box-bg-3x3').style.visibility = "hidden";
@@ -51,7 +60,8 @@ function two() {
 }
 
 function calculate2() {
-    // output box
+
+    // Output box element on the webpage
     const twoutbox = document.getElementById('textarea');
     
     // row1
@@ -66,11 +76,11 @@ function calculate2() {
     var tw_matrix = [[twr1c1, twr1c2], [twr2c1, twr2c2]];
 
     // to find Determinant of the matrix
-    var twdet;
+    var twdet; // Determinant of the 2x2 matrix
     twdet = math.det(tw_matrix);
     
     // to get eigen values and Eigen vectors
-    var twev;
+    var twev; // Eigenvalues and Eigenvectors for 2x2 matrix
     twev = math.eigs(tw_matrix);
 
     // to find eigen values and eigen vectors
@@ -199,7 +209,8 @@ function calculate2() {
 }
 
 function calculate3() {
-    // output box
+    
+    // Output box element on the webpage
     const thoutbox = document.getElementById('textarea');
     
     // row1
@@ -221,11 +232,11 @@ function calculate3() {
     var th_matrix = [[thr1c1, thr1c2, thr1c3], [thr2c1, thr2c2, thr2c3], [thr3c1, thr3c2, thr3c3]];
     
     // to find Determinant of the matrix
-    var thdet;
+    var thdet; // Determinant of the 3x3 matrix
     thdet = math.det(th_matrix);
     
     // to find Eigen values and Eigen vectors
-    var thev;
+    var thev; // Eigenvalues and Eigenvectors for 3x3 matrix
     thev = math.eigs(th_matrix);
     
     // to separate eigen values and eigen vectors
