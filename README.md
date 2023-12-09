@@ -6,7 +6,7 @@
 ## Try It!
 Live on Github Pages **https://subash2309.github.io/Diagonalization-of-matrix/**
 <br>
-Or download Source code directly form [here](https://github.com/SUBASH2309/Diagonalization-of-matrix/archive/refs/heads/master.zip).
+Or download Source code directly form [here](https://github.com/SUBASH2309/Diagonalisation-of-matrix/archive/refs/heads/master.zip).
 
 ### License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
