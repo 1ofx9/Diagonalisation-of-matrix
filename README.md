@@ -14,11 +14,11 @@ Or download Source code directly form [here](https://github.com/SUBASH2309/Diago
 
 This project is licensed under The MIT License.
 
-### Work flow:
-![DM](assets/DM-plan%20.jpg)
-
 ### How it Works?
+<img src = "./assets/DM-plan .jpg">
+
 #### 1. Matrix Visibility Functions:
+
 - `three()` and `two()` functions control the visibility of matrix elements on a webpage. 
 - For a 3x3 matrix, it makes the elements visible and hides the elements of a 2x2 matrix, and vice versa.
 

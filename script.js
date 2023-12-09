@@ -182,8 +182,8 @@ function calculate2() {
         var dia_matr1_a2 = [dia_matr2_a21, dia_matr2_a22];
         
         //TODO: Normalized Matrix
-        
-        twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\n\t"+tw_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = ["+twvx1a+", "+twvx1b+"]"+"\n\t\tX2 = ["+twvx2a+", "+twvx2b+"]"+"\n\n\tNormalised Matrix (N)"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"+"\n\n\tDiagonalized Matrix (D):"+"\n\t\t|"+dia_matr1_a1+"|"+"\n\t\t|"+dia_matr1_a2+"|";
+                                                                                                                                                                                                                                                   // | +"\n\n\tNormalised Matrix (N)"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"                                          
+        twoutput = "\n\tDeterminant of the matrix = "+twdet+"\n\n\t"+tw_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(twevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = ["+twvx1a+", "+twvx1b+"]"+"\n\t\tX2 = ["+twvx2a+", "+twvx2b+"]"+"\n\n\tDiagonalized Matrix (D):"+"\n\t\t|"+dia_matr1_a1+"|"+"\n\t\t|"+dia_matr1_a2+"|";
         twoutbox.innerHTML = twoutput;
         
     } else if (dia_ns == 1){ //Skew-symmetric
@@ -370,8 +370,8 @@ function calculate3() {
 
         //TODO: Normalized Matrix
 
-        
-        thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\n\t"+th_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = ["+thvx1a+", "+thvx1b+", "+thvx1c+"]"+"\n\t\tX2 = ["+thvx2a+", "+thvx2b+", "+thvx2c+"]"+"\n\t\tX3 = ["+thvx3a+", "+thvx3b+", "+thvx3c+"]"+"\n\n\tNormalised Matrix (N):"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"+"\n\n\tDiagonalized Matrix (D):"+"\n\t\t|"+dia_matr1_a1+"|"+"\n\t\t|"+dia_matr1_a2+"|"+"\n\t\t|"+dia_matr1_a3+"|";
+                                                                                                                                                                                                                                                                                                                             // | +"\n\n\tNormalised Matrix (N):"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"+"\n\t\t|"+"placeholder"+"|"                                                                        
+        thoutput = "\n\tDeterminant of the matrix = "+thdet+"\n\n\t"+th_matrix_type+"\n\n\tEigen values ('λ') = "+math.round(Object.values(thevalues))+"\n\n\tEigen Vectors:\n\t\tX1 = ["+thvx1a+", "+thvx1b+", "+thvx1c+"]"+"\n\t\tX2 = ["+thvx2a+", "+thvx2b+", "+thvx2c+"]"+"\n\t\tX3 = ["+thvx3a+", "+thvx3b+", "+thvx3c+"]"+"\n\n\tDiagonalized Matrix (D):"+"\n\t\t|"+dia_matr1_a1+"|"+"\n\t\t|"+dia_matr1_a2+"|"+"\n\t\t|"+dia_matr1_a3+"|";
         thoutbox.innerHTML = thoutput;
         
     } else if (dia_ns == 1){ //skew-symmetric
