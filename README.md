@@ -15,7 +15,7 @@ Or download Source code directly form [here](https://github.com/SUBASH2309/Diago
 This project is licensed under The MIT License.
 
 ### How it Works?
-<img src = "./assets/DM-plan .jpg">
+<img src = "./assets/DM-plan.jpg">
 
 #### 1. Matrix Visibility Functions:
 
