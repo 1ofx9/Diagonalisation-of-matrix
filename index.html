@@ -2,111 +2,214 @@
 <!DOCTYPE html>
 
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Diagonalization Of Matrix</title>
-		<link rel="stylesheet" href="./style.css" />
-		<script src="./script.js"></script>
-		<script src="./math.js" type="text/javascript"></script>
-	</head>
-	
-	<body>
-		<!-- Backdrop -->
-			
-		<!-- Header -->
-		<div class="header">
-				
-			<!-- Topic of the project -->
-			<div id="topic">Diagonalization Of Matrix</div> 
-				
-			<!-- Github Logo -->
-			<div id="logotext" onclick="window.open('https://github.com/SUBASH2309/Diagonalization-of-matrix')">Source Code</div>
-			<img id="gitlogo" src="./assets/github.svg" onclick="window.open('https://github.com/SUBASH2309/Diagonalization-of-matrix')" />
-		</div>
-		
-		<!-- Team Members -->
-		<div id="tm-border">
-		
-			<div id="tm-title">Team Members:</div>
-		
-			<div id="tm-title-underline"></div>
-		
-			<div id="tm-profiles">
-				<img src="./assets/aru.jpg" style="width: 125px; height: 125px; top: -4vh; left: 135vh; position: absolute; border-radius: 9999px;"/>
-				<img src="./assets/bha.jpg" style="width: 125px; height: 100px; left: 100vh; position: absolute; border-radius: 9999px;"/>
-				<img src="./assets/hem.jpg" style="width: 125px; height: 125px; top: -4vh; left: 66vh; position: absolute; border-radius: 9999px;"/>
-				<img src="./assets/sar.jpg" style="width: 100px; height: 100px; left: 33vh; position: absolute; border-radius: 9999px;"/>
-				<img src="./assets/sub.jpg" id="sub-pic" onclick="window.open('https://github.com/SUBASH2309')" style="width: 100px; height: 100px; left: 0vh; position: absolute; border-radius: 9999px; "/>
-			</div>
-		
-			<div id="tm-names">
-				<div onclick="window.open('https://github.com/SUBASH2309')" id="sub">Subash Praveen M</div>
-				<div id="sar">Sarthak N. Shetty</div>
-				<div id="hem">Hemachandran T</div>
-				<div id="bha">Bhardwaj N</div>
-				<div id="aru">Arun Kumar Rover P</div>				
-			</div>
-		</div>
-			
-			<!-- output text -->
-			<div id="output-text">Output:</div>
-			
-			<!-- output boy text area -->
-			<div>
-				<textarea wrap="soft" name="Output" rows="10" cols="20" id="textarea" disabled></textarea>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagonalization Of Matrix</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <script src="./math.js" type="text/javascript"></script>
+  </head>
 
-		<!-- Matrix Selection -->
-		<div>
-			<button type="button" id="twoxtwo" onclick="two()">2x2</button>
-			<button type="button" id="threexthree" onclick="three()">3x3</button>
-		</div>
+  <body>
+    <!-- Backdrop -->
 
-		<div id="input-box-bg-2x2"></div>
-		<div id="input-matrix-text-2x2">Enter Matrix:</div>
-		
-		<p id="two">
-			<table>
-				<tr>
-					<td><input id="twor1c1" type="number" pattern="+{0-9}" value="0" /></td>
-					<td><input id="twor1c2" type="number" pattern="+{0-9}" value="0" /></td>
-				</tr>
-				<tr>
-					<td><input id="twor2c1" type="number" pattern="+{0-9}" value="0" /></td>
-					<td><input id="twor2c2" type="number" pattern="+{0-9}" value="0" /></td>
-				</tr>
-			</table>
-			<button id="cal2" type="button" onclick="calculate2()">Calculate</button>
-		</p>
-		
-		<div id="input-box-bg-3x3"></div>
-		<div id="input-matrix-text-3x3">Enter Matrix:</div>
+    <!-- Header -->
+    <div class="header">
+      <!-- Topic of the project -->
+      <div
+        id="topic"
+        onclick="window.open('https://subash2309.github.io/Diagonalisation-of-matrix/')"
+      >
+        Diagonalization Of Matrix
+      </div>
 
-		<p id="three">
-			<table>
-				<tr>
-					<td><input id="threer1c1" type="number" pattern="+[0-9]" value="0" /></td>
-					<td><input id="threer1c2" type="number" pattern="+[0-9]" value="0" /></td>
-					<td><input id="threer1c3" type="number" pattern="+[0-9]" value="0" /></td>
-				</tr>
-				<tr>
-					<td><input id="threer2c1" type="number" pattern="+[0-9]" value="0" /></td>
-					<td><input id="threer2c2" type="number" pattern="+[0-9]" value="0" /></td>
-					<td><input id="threer2c3" type="number" pattern="+[0-9]" value="0" /></td>
-				</tr>
-				<tr>
-					<td><input id="threer3c1" type="number" pattern="+[0-9]" value="0" /></td>
-					<td><input id="threer3c2" type="number" pattern="+[0-9]" value="0" /></td>
-					<td><input id="threer3c3" type="number" pattern="+[0-9]" value="0" /></td>
-				</tr>
-			</table>
-			<button id="cal3" type="button" onclick="calculate3()">Calculate</button>
-		</p>
-		<p id="end">
-			<br><br>
-			<span id="here"></span>
-		</p>
-	</body>
+      <!-- Github Logo -->
+      <div
+        id="logotext"
+        onclick="window.open('https://github.com/SUBASH2309/Diagonalization-of-matrix')"
+      >
+        Source Code
+      </div>
+      <img
+        id="gitlogo"
+        src="./assets/github.svg"
+        onclick="window.open('https://github.com/SUBASH2309/Diagonalization-of-matrix')"
+      />
+    </div>
+
+    <!-- Team Members -->
+    <div id="tm">
+      <div id="tm-border"></div>
+
+      <div id="tm-title">
+        <div id="tm-text">Team Members:</div>
+        <div id="tm-text-underline"></div>
+      </div>
+
+      <div id="tm-profiles">
+        <img
+          src="./assets/aru.jpg"
+          style="
+            width: 125px;
+            height: 125px;
+            top: -4vh;
+            left: 135vh;
+            position: absolute;
+            border-radius: 9999px;
+          "
+        />
+
+        <img
+          src="./assets/bha.jpg"
+          style="
+            width: 125px;
+            height: 100px;
+            left: 100vh;
+            position: absolute;
+            border-radius: 9999px;
+          "
+        />
+
+        <img
+          src="./assets/hem.jpg"
+          style="
+            width: 125px;
+            height: 125px;
+            top: -4vh;
+            left: 66vh;
+            position: absolute;
+            border-radius: 9999px;
+          "
+        />
+        <img
+          src="./assets/sar.jpg"
+          style="
+            width: 100px;
+            height: 100px;
+            left: 33vh;
+            position: absolute;
+            border-radius: 9999px;
+          "
+        />
+
+        <img
+          src="./assets/sub.jpg"
+          id="sub-pic"
+          onclick="window.open('https://github.com/SUBASH2309')"
+          style="
+            width: 100px;
+            height: 100px;
+            left: 0vh;
+            position: absolute;
+            border-radius: 9999px;
+          "
+        />
+      </div>
+
+      <div id="tm-names">
+        <div onclick="window.open('https://github.com/SUBASH2309')" id="sub">
+          Subash Praveen M
+        </div>
+        <div id="sar">Sarthak N. Shetty</div>
+        <div id="hem">Hemachandran T</div>
+        <div id="bha">Bhardwaj N</div>
+        <div id="aru">Arun Kumar Rover P</div>
+      </div>
+    </div>
+
+    <!-- output text -->
+    <div id="output-text">Output:</div>
+
+    <!-- output boy text area -->
+    <div>
+      <textarea
+        wrap="soft"
+        name="Output"
+        rows="10"
+        cols="20"
+        id="textarea"
+        disabled
+      ></textarea>
+    </div>
+
+    <!-- Matrix Selection -->
+    <div>
+      <button type="button" id="twoxtwo" onclick="two()">2x2</button>
+      <button type="button" id="threexthree" onclick="three()">3x3</button>
+    </div>
+
+    <div id="input-box-bg-2x2"></div>
+    <div id="input-matrix-text-2x2">Enter Matrix:</div>
+
+    <div id="two">
+      <table>
+        <tr>
+          <td>
+            <input id="twor1c1" type="number" pattern="+{0-9}" value="0" />
+          </td>
+          <td>
+            <input id="twor1c2" type="number" pattern="+{0-9}" value="0" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="twor2c1" type="number" pattern="+{0-9}" value="0" />
+          </td>
+          <td>
+            <input id="twor2c2" type="number" pattern="+{0-9}" value="0" />
+          </td>
+        </tr>
+      </table>
+      <button id="cal2" type="button" onclick="calculate2()">Calculate</button>
+    </div>
+
+    <div id="input-box-bg-3x3"></div>
+    <div id="input-matrix-text-3x3">Enter Matrix:</div>
+
+    <div id="three">
+      <table>
+        <tr>
+          <td>
+            <input id="threer1c1" type="number" pattern="+[0-9]" value="0" />
+          </td>
+          <td>
+            <input id="threer1c2" type="number" pattern="+[0-9]" value="0" />
+          </td>
+          <td>
+            <input id="threer1c3" type="number" pattern="+[0-9]" value="0" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="threer2c1" type="number" pattern="+[0-9]" value="0" />
+          </td>
+          <td>
+            <input id="threer2c2" type="number" pattern="+[0-9]" value="0" />
+          </td>
+          <td>
+            <input id="threer2c3" type="number" pattern="+[0-9]" value="0" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="threer3c1" type="number" pattern="+[0-9]" value="0" />
+          </td>
+          <td>
+            <input id="threer3c2" type="number" pattern="+[0-9]" value="0" />
+          </td>
+          <td>
+            <input id="threer3c3" type="number" pattern="+[0-9]" value="0" />
+          </td>
+        </tr>
+      </table>
+      <button id="cal3" type="button" onclick="calculate3()">Calculate</button>
+    </div>
+
+    <p id="end">
+      <br /><br />
+      <span id="here"></span>
+    </p>
+  </body>
 </html>
