@@ -338,7 +338,7 @@ function calculate3() {
     //         |a31, b31, c31|
     
     // this line of code below does exactly what is given above :)
-    var mat_b =[[th_ev_x1[0], th_ev_x2[0], th_ev_x3[0]], [th_ev_x1[1], th_ev_x2[1], th_ev_x3[1]], [th_ev_x1[2], th_ev_x2[2], th_ev_x3[2]]] 
+    var mat_b = [[th_ev_x1[0], th_ev_x2[0], th_ev_x3[0]], [th_ev_x1[1], th_ev_x2[1], th_ev_x3[1]], [th_ev_x1[2], th_ev_x2[2], th_ev_x3[2]]] 
     var inv_mat_b = math.inv(mat_b);
     var diagonalised_mat = math.multiply(inv_mat_b, th_matrix, mat_b);
     
