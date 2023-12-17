@@ -660,7 +660,7 @@ textarea {
   #topic {
     width: 250px;
     height: 100px;
-    left: -34px;
+    left: -38px;
     color: black;
     font-size: 30px;
     word-wrap: break-word;
@@ -669,7 +669,7 @@ textarea {
   #logotext {
     width: 105px;
     height: 24px;
-    left: 226px;
+    left: 224px;
     top: 30px;
     font-size: 16px;
   }
@@ -677,24 +677,24 @@ textarea {
   #gitlogo {
     width: 50px;
     height: 50px;
-    left: 250px;
+    left: 248px;
   }
 
   .mat-3x3 {
     top: 25px;
-    left: -80px;
+    left: -88px;
     position: absolute;
   }
 
   .mat-2x2 {
     top: 25px;
-    left: -80px;
+    left: -88px;
     position: absolute;
   }
 
   .mat-sel {
     top: 30px;
-    left: -75px;
+    left: -80px;
     position: absolute;
   }
 }
