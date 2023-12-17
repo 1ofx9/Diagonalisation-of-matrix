@@ -92,10 +92,10 @@ tr {
 
 /* Matrix inputs */
 #input-matrix-text-3x3 {
-  align-self: stretch;
   top: 140px;
   left: 100px;
   height: 37px;
+  width: 160px;
   color: black;
   font-size: 26px;
   font-family: Poppins;
@@ -105,10 +105,10 @@ tr {
 }
 
 #input-matrix-text-2x2 {
-  align-self: stretch;
   top: 190px;
   left: 150px;
   height: 37px;
+  width: 160px;
   color: black;
   font-size: 26px;
   font-family: Poppins;
@@ -670,7 +670,7 @@ textarea {
   #logotext {
     width: 105px;
     height: 24px;
-    left: 230px;
+    left: 226px;
     top: 30px;
     font-size: 16px;
   }
@@ -678,6 +678,30 @@ textarea {
   #gitlogo {
     width: 50px;
     height: 50px;
-    left: 255px;
+    left: 250px;
   }
+
+  .mat-3x3 {
+    top: 25px;
+    left: -80px;
+    position: absolute;
+  }
+
+  .mat-2x2 {
+    top: 25px;
+    left: -80px;
+    position: absolute;
+  }
+
+  .mat-sel {
+    top: 30px;
+    left: -75px;
+    position: absolute;
+  }
+
+  /* #cal2 {
+    top: 500px;
+    left: 218px;
+    position: absolute;
+  } */
 }
