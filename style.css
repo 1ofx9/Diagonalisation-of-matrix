@@ -20,7 +20,6 @@ input[type="number"]::-webkit-inner-spin-button {
 table,
 td,
 tr {
-  align-content: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -698,10 +697,4 @@ textarea {
     left: -75px;
     position: absolute;
   }
-
-  /* #cal2 {
-    top: 500px;
-    left: 218px;
-    position: absolute;
-  } */
 }
