@@ -4,7 +4,7 @@
  Diagonalisation of a matrix is the process of reduction of a matrix to diagonal form. The process of reduction of a matrix to diagonal form is as follows: A square matrix of order n with n linearly independent eigen vectors can be diagonalised by a similarity transformations D = (B-)AB where B is the modal matrix whose columns are the eigen vecors of the matrix and (B-) is the inverse of B.
 
 ## Try It!
-Live on Github Pages **https://subash2309.github.io/Diagonalization-of-matrix/**
+Live on Github Pages **https://subash2309.github.io/Diagonalisation-of-matrix/**
 <br>
 Or download Source code directly form [here](https://github.com/SUBASH2309/Diagonalisation-of-matrix/archive/refs/heads/master.zip).
 
@@ -50,7 +50,7 @@ This project is licensed under The MIT License.
 - The code involves operations such as finding determinants, eigenvalues, eigenvectors, matrix transposition, matrix types (symmetric or skew-symmetric), and diagonalization.
 
 #### 6. External Library:
-- The code relies on an external library named `math` (Math.js) for mathematical  
+- The code relies on an external library named `math` (math.js) for mathematical  
 <br>
 
 In summary, this code enables users to input 2x2 or 3x3 matrices on a webpage, performs various linear algebra operations on them, and displays the results interactively.
@@ -79,4 +79,4 @@ In summary, this code enables users to input 2x2 or 3x3 matrices on a webpage, p
 
 ### Last Updated
 
-This README was last updated on Dec 8, 2023.
+This README was last updated on Dec 17, 2023.
