@@ -42,20 +42,19 @@ tr {
 }
 
 #topic {
-  width: 755px;
-  height: 68px;
+  /* width: 755px;
+  height: 68px; */
   left: -25px;
   top: -40px;
-  position: absolute;
-  color: black;
+  position: relative;
+  color: rgb(0, 0, 0);
   font-size: 48px;
   font-family: Poppins;
   font-weight: 600;
-  word-wrap: break-word;
 }
 
 #topic:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 #logotext {
@@ -64,7 +63,7 @@ tr {
   left: 1080px;
   top: 30px;
   position: absolute;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   font-family: Poppins;
   font-weight: 500;
@@ -656,4 +655,29 @@ textarea {
   font-family: Poppins;
   font-weight: 600;
   font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  #topic {
+    width: 250px;
+    height: 100px;
+    left: -34px;
+    color: black;
+    font-size: 30px;
+    word-wrap: break-word;
+  }
+
+  #logotext {
+    width: 105px;
+    height: 24px;
+    left: 230px;
+    top: 30px;
+    font-size: 16px;
+  }
+
+  #gitlogo {
+    width: 50px;
+    height: 50px;
+    left: 255px;
+  }
 }
