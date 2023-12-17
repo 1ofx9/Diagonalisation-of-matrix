@@ -595,6 +595,10 @@ tr {
   cursor: default;
 }
 
+#sar-pic {
+  left: 33vh;
+}
+
 #hem {
   width: 168.44px;
   left: 66vh;
@@ -604,6 +608,11 @@ tr {
   font-family: Poppins;
   font-weight: 500;
   cursor: default;
+}
+
+#hem-pic {
+  left: 66vh;
+  top: -4vh;
 }
 
 #bha {
@@ -617,6 +626,10 @@ tr {
   cursor: default;
 }
 
+#bha-pic {
+  left: 100vh;
+}
+
 #aru {
   width: 182px;
   left: 134vh;
@@ -626,6 +639,11 @@ tr {
   font-family: Poppins;
   font-weight: 500;
   cursor: default;
+}
+
+#aru-pic {
+  top: -4vh;
+  left: 135vh;
 }
 
 textarea {
@@ -646,6 +664,10 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+  .header {
+    width: 250px;
+  }
+
   #topic {
     width: 250px;
     height: 100px;
@@ -713,6 +735,49 @@ textarea {
 
   #tm-border {
     width: 40.85vh;
-    height: 500vh;
+    height: 140vh;
+  }
+
+  #sub {
+    top: -5vh;
+  }
+
+  #sar {
+    top: 23vh;
+    left: -1vh;
+  }
+
+  #sar-pic {
+    top: 26vh;
+    left: -1vh;
+  }
+
+  #hem {
+    top: 48vh;
+    left: -1vh;
+  }
+
+  #hem-pic {
+    top: 50vh;
+    left: -2.5vh;
+  }
+
+  #bha {
+    left: 2.5vh;
+    top: 76vh;
+  }
+
+  #bha-pic {
+    top: 80vh;
+    left: -2.5vh;
+  }
+
+  #aru {
+    top: 98vh;
+    left: -2.5vh;
+  }
+  #aru-pic {
+    top: 100vh;
+    left: -3.5vh;
   }
 }
