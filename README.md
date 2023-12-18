@@ -15,7 +15,10 @@ Or download Source code directly form [here](https://github.com/SUBASH2309/Diago
 This project is licensed under The MIT License.
 
 ### How it Works?
-<img src = "./assets/DM-plan.jpg">
+![Steps involved in DM](./assets/DM-plan.jpg)
+<br>
+
+Note: The diagonalised form of a symmetric matrix (D) can also be obtained using the formula used for skew-symmetric matrix i.e. [(B-)AB]. Therefore, using a normalised matrix may not always be necessary.
 
 #### 1. Matrix Visibility Functions:
 
@@ -79,4 +82,4 @@ In summary, this code enables users to input 2x2 or 3x3 matrices on a webpage, p
 
 ### Last Updated
 
-This README was last updated on Dec 17, 2023.
+This README was last updated on Dec 18, 2023.
