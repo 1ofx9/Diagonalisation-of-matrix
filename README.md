@@ -1,4 +1,7 @@
 <!-- Author: @Subash Praveen Instagram: @sub._.praveen Github: @SUBASH2309 -->
+## Dev notes
+ Can i make this better? yes. <br>
+ will i do it? nahhh...
 
 # **Diagonalisation Of Matrix**
  Diagonalisation of a matrix is the process of reduction of a matrix to diagonal form. The process of reduction of a matrix to diagonal form is as follows: A square matrix of order n with n linearly independent eigen vectors can be diagonalised by a similarity transformations D = (B-)AB where B is the modal matrix whose columns are the eigen vecors of the matrix and (B-) is the inverse of B.
@@ -82,4 +85,4 @@ In summary, this code enables users to input 2x2 or 3x3 matrices on a webpage, p
 
 ### Last Updated
 
-This README was last updated on Dec 18, 2023.
+This README was last updated on Jul 7, 2024.
