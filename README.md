@@ -7,7 +7,7 @@
  Diagonalisation of a matrix is the process of reduction of a matrix to diagonal form. The process of reduction of a matrix to diagonal form is as follows: A square matrix of order n with n linearly independent eigen vectors can be diagonalised by a similarity transformations D = (B-)AB where B is the modal matrix whose columns are the eigen vecors of the matrix and (B-) is the inverse of B.
 
 ## Try It!
-Live on Github Pages **https://subash2309.github.io/Diagonalisation-of-matrix/**
+Live on Github Pages [here](https://1ofx9.github.io/Diagonalisation-of-matrix/).
 <br>
 Or download Source code directly form [here](https://github.com/SUBASH2309/Diagonalisation-of-matrix/archive/refs/heads/master.zip).
 
