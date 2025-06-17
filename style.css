@@ -1,4 +1,4 @@
-/* Author: @Subash Praveen Instagram: @sub._.praveen Github: @SUBASH2309 */
+/* Author: @Subash Praveen Instagram: @sub._.praveen Github: @1ofx9 */
 
 /* Google Fonts */
 
@@ -8,11 +8,6 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-/* to remove number spin button */
-input[type="number"]::-webkit-inner-spin-button {
-  display: none;
 }
 
 table,
@@ -387,7 +382,7 @@ tr {
   box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
   position: absolute;
   background: white;
-  border-radius: 24px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px black solid;
   backdrop-filter: blur(20px);
@@ -418,7 +413,7 @@ tr {
   box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
   position: absolute;
   background: white;
-  border-radius: 24px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px black solid;
   backdrop-filter: blur(20px);
@@ -449,7 +444,7 @@ tr {
   box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
   position: absolute;
   background: white;
-  border-radius: 24px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px black solid;
   backdrop-filter: blur(20px);
@@ -480,7 +475,7 @@ tr {
   box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
   position: absolute;
   background: white;
-  border-radius: 24px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px black solid;
   backdrop-filter: blur(20px);
@@ -512,140 +507,6 @@ tr {
   cursor: default;
 }
 
-#tm {
-  top: 110vh;
-  left: 11vh;
-  position: absolute;
-}
-
-#tm-border {
-  width: 190vh;
-  height: 50vh;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 20px;
-  border: 1px #3f3f3f solid;
-  display: flex;
-}
-
-#tm-title {
-  top: 3vh;
-  left: 3vh;
-  position: absolute;
-}
-
-#tm-text {
-  width: 100%;
-  height: 45px;
-  color: black;
-  font-size: 26px;
-  font-family: Poppins;
-  font-weight: 500;
-}
-
-#tm-text-underline {
-  width: 208px;
-  height: 4px;
-  background: #e0dcdc;
-  border-radius: 20px;
-}
-
-#tm-profiles {
-  top: 16vh;
-  left: 16vh;
-  position: absolute;
-}
-
-#tm-names {
-  top: 36vh;
-  left: 12vh;
-  position: absolute;
-}
-
-#sub {
-  width: 168.44px;
-  left: -2vh;
-  color: black;
-  position: absolute;
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 500;
-  cursor: default;
-}
-
-#sub:hover {
-  cursor: pointer;
-}
-
-#sub-pic {
-  cursor: default;
-}
-
-#sub-pic:hover {
-  cursor: pointer;
-}
-
-#sar {
-  width: 156px;
-  left: 32vh;
-  color: black;
-  position: absolute;
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 500;
-  cursor: default;
-}
-
-#sar-pic {
-  left: 33vh;
-}
-
-#hem {
-  width: 168.44px;
-  left: 66vh;
-  color: black;
-  position: absolute;
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 500;
-  cursor: default;
-}
-
-#hem-pic {
-  left: 66vh;
-  top: -4vh;
-}
-
-#bha {
-  width: 106px;
-  left: 104vh;
-  color: black;
-  position: absolute;
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 500;
-  cursor: default;
-}
-
-#bha-pic {
-  left: 100vh;
-}
-
-#aru {
-  width: 182px;
-  left: 134vh;
-  color: black;
-  position: absolute;
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 500;
-  cursor: default;
-}
-
-#aru-pic {
-  top: -4vh;
-  left: 135vh;
-}
-
 textarea {
   resize: none;
   background: white;
@@ -661,13 +522,6 @@ textarea {
   font-family: Poppins;
   font-weight: 600;
   font-size: 14px;
-}
-
-#bottom-bar {
-  width: 100%;
-  height: 10vh;
-  bottom: -70vh;
-  position: absolute;
 }
 
 @media screen and (max-width: 600px) {
@@ -736,59 +590,5 @@ textarea {
     margin-top: 0rem;
     margin-left: 0rem;
     font-size: 15px;
-  }
-
-  #tm {
-    top: 1200px;
-    left: 12px;
-    position: absolute;
-  }
-
-  #tm-border {
-    width: 368px;
-    height: 140vh;
-  }
-
-  #sub {
-    top: -5vh;
-  }
-
-  #sar {
-    top: 23vh;
-    left: -1vh;
-  }
-
-  #sar-pic {
-    top: 26vh;
-    left: -1vh;
-  }
-
-  #hem {
-    top: 48vh;
-    left: -1vh;
-  }
-
-  #hem-pic {
-    top: 50vh;
-    left: -2.5vh;
-  }
-
-  #bha {
-    left: 2.5vh;
-    top: 76vh;
-  }
-
-  #bha-pic {
-    top: 80vh;
-    left: -2.5vh;
-  }
-
-  #aru {
-    top: 98vh;
-    left: -2.5vh;
-  }
-  #aru-pic {
-    top: 100vh;
-    left: -3.5vh;
   }
 }
