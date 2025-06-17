@@ -85,4 +85,4 @@ In summary, this code enables users to input 2x2 or 3x3 matrices on a webpage, p
 
 ### Last Updated
 
-This README was last updated on Jul 7, 2024.
+This README was last updated on Jun 17, 2025.
