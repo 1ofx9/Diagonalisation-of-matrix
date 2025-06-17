@@ -1,4 +1,4 @@
-<!-- Author: @Subash Praveen Instagram: @sub._.praveen Github: @SUBASH2309 -->
+<!-- Author: @Subash Praveen Instagram: @sub._.praveen Github: @1ofx9 -->
 ## Dev notes
  Can i make this better? yes. <br>
  will i do it? nahhh...
