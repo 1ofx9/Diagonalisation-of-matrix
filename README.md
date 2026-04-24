@@ -59,6 +59,16 @@ In summary, this tool enables users to input 2x2 or 3x3 matrices on a webpage, p
  <br>
 
  An extensive math library for JavaScript and Node.js. Find it [**here**](https://mathjs.org/)!.
+
+  ```js
+ math.round()
+ math.eigs()           // For Eigen values and Eigen vectors
+ math.transpose()      // To find the transpose of matrix
+ math.det()            // To find the determinant of matrix
+ math.inv()            // To find the inverse of matrix
+ math.multiply()       // To multiply matrices
+ math.deepEqual()      // To check matrix equality (Symmetry)
+ ```
  
 ### Last Updated
 
