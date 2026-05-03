@@ -56,7 +56,6 @@ In summary, this tool enables users to input 2x2 or 3x3 matrices on a webpage, p
 <br>
 
  ### Math js
- <br>
  An extensive math library for JavaScript and Node.js. Find it [**here**](https://mathjs.org/)!.
  
 ### Last Updated
