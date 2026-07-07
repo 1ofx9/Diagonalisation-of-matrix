@@ -7,7 +7,7 @@ Live on Github Pages [here](https://1ofx9.github.io/Diagonalisation-of-matrix/).
 <br>
 Or download Source code directly from [here](https://github.com/SUBASH2309/Diagonalisation-of-matrix/archive/refs/heads/master.zip).
 
-[![badge](https://shieldcn.dev/github/1ofx9/Diagonalisation-of-matrix/license.svg?variant=branded)](https://github.com/1ofx9/Diagonalisation-of-matrix)
+[![badge](https://shieldcn.dev/github/1ofx9/Diagonalisation-of-matrix/license.svg)](https://github.com/1ofx9/Diagonalisation-of-matrix)
 
 ### How it Works?
 ![Steps involved in DM](./assets/DM-plan.jpg)
